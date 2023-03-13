@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container{
+            padding: 30px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(1fr);
+
+            grid-auto-rows: minmax(100px, auto);
+            grid-template-areas:
+                "item1 ... item2 item3"
+                "item1 ... item4 item5"
+                "item10 ... item7 item8"
+                "item10 ... item9 item11";
+            gap: 10px;
+            background-color: #f36421;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .item1 {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .item10 {
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        .item3 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        .item8 {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        .item4 {
+            grid-row-start: 2;
+            grid-column-start: 2;
+        }
+
+        .item5 {
+            grid-row-start: 2;
+            grid-column-start: 3;
+        }
+
+        .grid-area-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px, auto);
+            grid-template-areas:
+                "item1 ... item2 item3"
+                "item1 ... item4 item5"
+                "item10 ... item7 item8"
+                "item10 ... item9 item11";
+            gap: 10px;
+            background-color: #f36421;
+            padding: 10px;
+        }
+
+        .grid-area-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .area5 {
+            grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 5;
+            grid-column-end: 7;
+        }
+
+        .area7 {
+            grid-column-start: 6;
+        }
+
+        .area8 {
+            background: aqua;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .area9 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 4;
+            grid-column-end: 6;
+        }
+        
+        .grid-area-container .area9 {
+            background: rgb(0, 255, 157);
+        }
+        .grid-area-container .area8 {
+            background: rgb(0, 255, 76);
+        }
+        .grid-area-container .area5 {
+            background: rgb(0, 132, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h4> Grid Column and Row </h4>
+        <div class="grid-container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+            <div class="item6">6</div>
+            <div class="item7">7</div>
+            <div class="item8">8</div>
+            <div class="item9">9</div>
+            <div class="item10">10</div>
+            <div class="item11">11</div>
+            <div class="item12">12</div>
+        </div>
+        <h4> Grid Column and Row </h4>
+        <div class="grid-area-container">
+            <div class="area1">1</div>
+            <div class="area2">2</div>
+            <div class="area3">3</div>
+            <div class="area4">4</div>
+            <div class="area5">5</div>
+            <div class="area6">6</div>
+            <div class="area7">7</div>
+            <div class="area8" >8</div>
+            <div class="area9">9</div>
+            <div class="area10">10</div>
+            <div class="area11">11</div>
+            <div class="area12">12</div>
+            <div class="area13">13</div>
+            <div class="area14">14</div>
+            <div class="area15">15</div>
+            <div class="area16">16</div>
+            <div class="area17">17</div>
+            <div class="area18">18</div>
+            <div class="area19">19</div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Bonchon Chicken Order Form</title>
+	<img src="assets/1.1.a_Logo_Hor_Black+Red+ntl.png" width="500px">
+</head>
+
+<body style="margin: 100px;">
+	<img src="assets/2PC-CHICKEN-BOXED-MEAL.jpg">
+	<h1>2-Pc Korean Fried Chicken Boxed Meal</h1>
+	<form>
+		<fieldset>
+			<legend>Choose Price</legend>
+			<input type="checkbox" name="price" value="230.00" checked>2-Pc Korean Fried Chicken Boxed Meal (230.00
+			pesos)<br>
+		</fieldset>
+		<fieldset>
+			<legend>Choose Flavor</legend>
+			<input type="checkbox" name="flavor" value="yangnyeom">Yangnyeom<br>
+			<input type="checkbox" name="flavor" value="soy garlic">Soy Garlic<br>
+			<input type="checkbox" name="flavor" value="klassic Fried Chikin with Gravy">Klassic Fried Chikin with
+			Gravy<br>
+			<input type="checkbox" name="flavor" value="spicy">Spicy<br>
+			<input type="checkbox" name="flavor" value="crunchy garlic">Crunchy sGarlic<br>
+		</fieldset>
+
+		<fieldset>
+			<table>
+				<legend>Choose Drinks</legend>
+				<input type="checkbox" name="drink" value="Premium House Blend Iced Tea Regular">Premium House Blend
+				Iced Tea Regular<br>
+				<input type="checkbox" name="drink" value="Premium House Blend Iced Tea Large">Premium House Blend Iced
+				Tea Large<br>
+				<input type="checkbox" name="drink" value="Del Monte Pineapple Juice Regular">Del Monte Pineapple Juice
+				Regular<br>
+				<input type="checkbox" name="drink" value="Del Monte Pineapple Juice Large">Del Monte Pineapple Juice
+				Large<br>
+			</table>
+		</fieldset>
+		<fieldset>
+			<p>Select Drink:</p>
+			<select name="drink" id="drink" multiple>
+				<option value="coke">Coke</option>
+				<option value="sprite">Sprite</option>
+				<option value="royak">Royal</option>
+			</select>
+		</fieldset>
+		<input type="submit" value="Place Order">
+	</form>
+</body>
+
+</html>

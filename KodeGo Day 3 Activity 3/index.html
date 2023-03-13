@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+  <center> 
+    <body style="margin: 100px;">
+		<img src="assets/NicoleMagallanes.jpg" width="200" height="200" />
+		<h1>Hello I am Nicole Magallanes WD58P</h1>
+		<p>I am a 2nd Year Software Engineering Student, an energetic, cute and ambitious person.
+			<br> Born and raise in Barangay Moonwalk Paranaque City. With my Mom, Dad and my Brother.
+		</p>
+		<hr noshade>
+        <br>
+    <form action="thank-you.html" method="GET">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+    <br>
+    <form action="thank-you.html" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <table border="2" cellpadding="20">
+        <tr>
+          <th>Drinks</th>
+          <th>Price</th>
+          <th>Select</th>
+          <th>Size</th>
+          <th></th>
+          <th></th>
+          <th>Quantiy</th>
+        </tr>
+        <br>
+        <tr>
+          <td>Coke</td>
+          <td>$10.00</td>
+          <td><input type="radio" name="product" value="1"></td>
+          <td><input type="checkbox" name="product[]" value="1"> Small</td>
+          <td><input type="checkbox" name="product[]" value="1"> Medium</td>
+          <td><input type="checkbox" name="product[]" value="1"> Large</td>
+          <td><select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td>Sprite</td>
+          <td>$15.00</td>
+          <td><input type="radio" name="product" value="2"></td>
+          <td><input type="checkbox" name="product[]" value="2"> Small</td>
+          <td><input type="checkbox" name="product[]" value="2"> Medium</td>
+          <td><input type="checkbox" name="product[]" value="2"> Large</td>
+          <td><select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select></td>
+        
+        </tr>
+        <tr>
+          <td>Mountain Dew</td>
+          <td>$20.00</td>
+          <td><input type="radio" name="product" value="3"></td>
+          <td><input type="checkbox" name="product[]" value="3"> Small</td>
+          <td><input type="checkbox" name="product[]" value="3"> Medium</td>
+          <td><input type="checkbox" name="product[]" value="3"> Large</td>
+          <td><select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select></td>
+        </tr>
+      </table>
+  </body>
+</center>
+</html>
