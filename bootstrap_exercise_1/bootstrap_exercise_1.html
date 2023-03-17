@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Exercise 1</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Client</h1>
+            </div>
+            <div class="col-sm-6 text-end">
+                <button class="btn btn-primary"> Add </button>
+            </div>
+            <form class="d-flex flex-column align-items-start">
+                <div class="form-group">
+                  <div class="d-flex flex-row align-items-center">
+                    <input type="text" class="form-control mr-2" id="keyword" placeholder="Keyword">
+                    <button type="submit" class="btn btn-primary" id="search">Search</button>
+                  </div>
+                </div>
+              </form>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Address</th>
+                        <th>Contact Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nicole Magallanes</td>
+                        <td>1234</td>
+                        <td>123 Main St.</td>
+                        <td>555-1234</td>
+                    </tr>
+                    <tr>
+                        <td>Nicole Magallanes</td>
+                        <td>1234</td>
+                        <td>123 Main St.</td>
+                        <td>555-1234</td>
+                    </tr>
+                    <tr>
+                        <td>Nicole Magallanes</td>
+                        <td>1234</td>
+                        <td>123 Main St.</td>
+                        <td>555-1234</td>
+                    </tr>
+                    <tr>
+                        <td>Nicole Magallanes</td>
+                        <td>1234</td>
+                        <td>123 Main St.</td>
+                        <td>555-1234</td>
+                    </tr>
+                    <tr>
+                        <td>Nicole Magallanes</td>
+                        <td>1234</td>
+                        <td>123 Main St.</td>
+                        <td>555-1234</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="btn-group" role="group">
+                <a href="#" class="previous round">&#8249;</a>
+                <button class="round"> 1</button>
+                <button class="round"> 2</button>
+                <a href="#" class="next round">&#8250;</a>
+                <p>16 - 20/20 Records</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="bootstrap_components/bootstrap.min.js"></script>
+</body>
+
+</html>
