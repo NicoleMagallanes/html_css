@@ -1,0 +1,27 @@
+
+h1 {
+    font-size: 50px;
+    color: goldenrod;
+}
+/* Add margin to the container */
+  .btn-primary {
+    background-color: saddlebrown;
+    border-color: #ddd;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+  .nav {
+    flex-wrap: nowrap;
+  }
+  .nav-item {
+    border-bottom: none;
+  }
+  #sidebar {
+    width: 50px;
+  }
+  .nav-tab {
+    padding: 0px;
+  }
+  .card-body {
+    padding: 10px 90px;
+  }
